@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del ahorcado</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+  </head>
+
+  <body>
+    <header>
+
+      <img class="logo" src="imagenes/logo.jpg" alt="logo Alura">
+
+      <h1>Alura challenge 2: Juego del ahorcado</h1>
+
+      <h2>Versión Desktop (para PC)</h2>
+
+      <section>
+      
+        <img class="boton_menu" src="imagenes/boton_menu.png" alt="boton menu" title="Acerca de ...">
+      
+        <div class="menu">
+      
+          <p class="caracteristicas_version"><strong>Acerca del Juego del Ahorcado - Desktop v1.18622</strong><br>
+            -La pantalla inicial posee botón de "Iniciar partida" y "Agregar nueva palabra".<br>
+            -La pantalla "Agregar nueva palabra" posee botón de guardar, borrar y volver.<br>
+            -Además posee validación de palabra ingresada.<br>
+            -Dicha validación muestra mensaje de error si la misma no cumple las especificaciones adecuadas, incluso para palabras repetidas.<br>
+            -Al presionar botón "Guardar" muestra mensaje de palabra guardada si la misma fue validada.<br>
+            -Posee limpieza y focalización en la caja de ingreso de palabras.<br>
+            -La pantalla "Iniciar partida" posee botón de nueva partida y salir.<br>
+            -Además posee validación de letras ingresadas.<br>
+            -Dicha validación muestra mensaje de error si la misma no cumple las especificaciones adecuadas, incluso para letras repetidas.<br>
+            -Separación de letras acertadas y letras incorrectas.<br>
+            -Conteo de palabras secretas utilizadas. Cuando las mismas se agotan, consulta al usuario si decide volver o no a jugar.<br>
+            -Dibujo estilo Ahorcado realizado en tablero canvas.<br>
+            -Todos los botones están estilizados con captura de eventos.<br>
+            -Mensajes al usuario al ganar o perder la partida, incluso mostrando cual era la palabra buscada.<br>
+            -Botón de menú con características de la versión actual.<br>
+            -Menú despleglable con botón para cerrar ventana incluido.
+          </p>
+      
+          <img class="boton_cerrar" src="imagenes/boton_cerrar.png" alt="botón cerrar menú">
+        </div>
+      </section>
+
+    </header>
+      
+    <main>
+      <section class="pantalla_inicial">
+        
+        <button class="boton_iniciar">Iniciar juego</button>
+        
+        <button class="boton_agregar_palabra">Agregar nueva palabra</button>
+      </section>
+
+      <section class="pantalla_agregar_palabra">
+          
+        <input type="text" class="input_agregar_palabra" placeholder="Ingrese nueva palabra">
+
+        <div class="advertencia">
+          
+          <img class="exclamation_circle" src="imagenes/exclamation-circle-fill.jpg" alt="círculo con signo de exclamación">
+          
+          <p class="aclaracion">Valida palabras con máximo 8 letras mayúsculas y sin acentos ni caracteres especiales. (No acepta letra Ñ).</p>
+        </div>
+        
+        <div class="botones_agregar_palabra">
+          
+          <button class="boton_guardar">Guardar</button>
+
+          <button class="boton_borrar">Borrar</button>
+
+          <button class="boton_volver">Volver</button>
+        </div>
+
+        <div class="alerta_guardado">
+          
+          <p class="texto_alerta_guardado">La palabra fue agregada correctamente.</p>
+        </div>
+      </section>
+
+      <section class="pantalla_partida">
+          
+        <canvas width="600" height="500"></canvas>
+          
+        <div class="botones_partida">
+          
+          <button class="boton_nuevo_juego">Nuevo juego</button>
+          
+          <button class="boton_salir">Salir</button>
+        </div>
+
+        <div class="input_mensaje">
+          
+          <input type="text" class="input_mensaje_ganador">
+
+          <textarea type="text" class="input_mensaje_perdedor"></textarea>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      
+      <p class="copyright">© Copyright CrisLi Desarrollos Web - 2022.<br>Cristian Raúl Lista desarrollador web.<br>Contacto: cristian_raul76@hotmail.com</p>
+    </footer>
+      
+    <script src="js/principal.js"></script>
+    <script src="js/agregar-palabra.js"></script>
+    <script src="js/partida.js"></script>
+  </body>      
+</html>

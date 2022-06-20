@@ -1,0 +1,348 @@
+body {
+  background: #f3f5fc;
+  width: 900px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+}
+
+.logo {
+  width: 19px;
+  height: 29px;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+}
+
+h1 {
+  width: 878px;
+  height: 31px;
+  position: absolute;
+  left: 65px;
+  top: 17px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: 30px;
+  line-height: 150%;
+  color: #0a3871;
+  font-weight: bold;
+}
+
+h2 {
+  width: 878px;
+  height: 31px;
+  position: absolute;
+  left: 485px;
+  top: 57px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: 12px;
+  line-height: 150%;
+  color: #0a3871;
+  font-weight: bold;
+}
+
+.boton_menu {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 820px;
+  top: 18px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.boton_menu:hover,
+.boton_cerrar:hover,
+.copyright:hover {
+  transform: scale(1.1);
+}
+
+.menu {
+  display: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.caracteristicas_version {
+  width: 350px;
+  border: 0.5px solid black;
+  border-radius: 8px;
+  position: absolute;
+  left: 490px;
+  top: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: 14px;
+  color: #072b61;
+  background-color: #eff1fa;
+  z-index: 1;
+  padding: 3.5px;
+  box-shadow: 0 0 25px #ccc;
+}
+
+.boton_cerrar {
+  width: 23px;
+  height: 13px;
+  border: 1px solid black;
+  border-radius: 3px;
+  z-index: 2;
+  position: absolute;
+  left: 815px;
+  top: 25px;
+  cursor: pointer;
+}
+
+.boton_iniciar {
+  position: absolute;
+  width: 250px;
+  height: 80px;
+  left: 325px;
+  top: 200px;
+  background: #0a3871;
+  color: #d8dfe8;
+  border-radius: 24px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.boton_agregar_palabra {
+  position: absolute;
+  width: 220px;
+  height: 47px;
+  left: 340px;
+  top: 315px;
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 14px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  text-align: center;
+  color: #0a3871;
+  cursor: pointer;
+}
+
+.alerta_guardado {
+  display: none;
+}
+
+.pantalla_partida,
+.pantalla_agregar_palabra,
+.input_mensaje_ganador,
+.input_mensaje_perdedor {
+  display: none;
+}
+
+.input_agregar_palabra {
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  left: 300px;
+  top: 135px;
+  background: #f3f5fc;
+  box-shadow: 0px 16px 21px -5px rgba(0, 0, 0, 0.15);
+  border-radius: 21px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  text-align: center;
+  color: #495057;
+  border: none;
+  outline: none;
+}
+
+.exclamation_circle {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 45px;
+  top: 385px;
+}
+
+.aclaracion {
+  position: absolute;
+  width: 620px;
+  height: 16px;
+  left: 65px;
+  top: 384px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: left;
+}
+
+.boton_guardar {
+  position: absolute;
+  width: 240px;
+  height: 43px;
+  left: 45px;
+  top: 420px;
+  background: #0a3871;
+  border: 1px solid #0a3871;
+  border-radius: 18px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  text-align: center;
+  color: #d8dfe8;
+  cursor: pointer;
+}
+
+.boton_borrar {
+  position: absolute;
+  width: 240px;
+  height: 43px;
+  left: 330px;
+  top: 420px;
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 18px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  text-align: center;
+  color: #0a3871;
+  cursor: pointer;
+}
+
+.boton_volver {
+  position: absolute;
+  width: 240px;
+  height: 43px;
+  left: 615px;
+  top: 420px;
+  background: #0a3871;
+  border: 1px solid #0a3871;
+  border-radius: 18px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  text-align: center;
+  color: #d8dfe8;
+  cursor: pointer;
+}
+
+.alerta_guardado {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 700ms;
+  display: none;
+  opacity: 0.7;
+}
+
+.texto_alerta_guardado {
+  text-align: center;
+  margin-top: 90px;
+  padding: 19%;
+  font-size: 40px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  color: #f00;
+  display: none;
+}
+
+canvas {
+  margin: 50px 150px;
+}
+
+.boton_nuevo_juego {
+  position: absolute;
+  width: 262px;
+  height: 47px;
+  left: 176px;
+  top: 550px;
+  background: #0a3871;
+  border: 1px solid #0a3871;
+  border-radius: 18px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  text-align: center;
+  color: #d8dfe8;
+  cursor: pointer;
+}
+
+.boton_salir {
+  position: absolute;
+  width: 262px;
+  height: 47px;
+  left: 462px;
+  top: 550px;
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 18px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  text-align: center;
+  color: #0a3871;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.input_mensaje_ganador,
+.input_mensaje_perdedor {
+  position: absolute;
+  width: 450px;
+  left: 225px;
+  top: 480px;
+  background: #f3f5fc;
+  font-family: 'Inter';
+  font-style: normal;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.input_mensaje_ganador {
+  color: #07e20f;
+  font-weight: bold;
+  font-size: 38px;
+  height: 50px;
+}
+
+.input_mensaje_perdedor {
+  color: #e20736;
+  font-weight: 400;
+  font-size: 22px;
+  height: 60px;
+}
+
+footer {
+  position: absolute;
+  top: 600px;
+  left: auto;
+  right: auto;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Inter';
+  font-style: normal;
+  margin: 20px;
+  padding: 10px 0;
+  color: #052051;
+  background: #aab2e5;
+  width: 860px;
+}
